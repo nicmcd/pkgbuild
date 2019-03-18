@@ -1,7 +1,7 @@
 licenses(["notice"])
 
 cc_library(
-  name = "lib",
+  name = "zlib",
   srcs = glob(["*.c"]),
   hdrs = glob(["*.h"]),
   copts = [

@@ -1,7 +1,7 @@
 licenses(["notice"])
 
 cc_library(
-  name = "lib",
+  name = "tclap",
   hdrs = glob(["include/**/*.h"]),
   copts = [
     "-fexceptions",
