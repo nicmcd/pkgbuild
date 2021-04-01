@@ -1,0 +1,38 @@
+diff --git a/versions.ldscript b/versions.ldscript
+index 23074a0..0d08404 100644
+--- a/versions.ldscript
++++ b/versions.ldscript
+@@ -61,8 +61,6 @@ libnuma_1.1 {
+     numa_warn;
+     numa_exit_on_warn;
+     numa_node_to_cpu_update;
+-  local:
+-    *;
+ };
+ 
+ # The interfaces at the "v2" level.
+@@ -122,8 +120,6 @@ libnuma_1.2 {
+     numa_set_interleave_mask;
+     numa_set_membind;
+     numa_tonodemask_memory;
+-  local:
+-    *;
+ } libnuma_1.1;
+ 
+ # New parsing interface for cpu/numastrings
+@@ -134,8 +130,6 @@ libnuma_1.3 {
+     numa_parse_cpustring_all;
+     numa_parse_nodestring_all;
+     numa_num_possible_cpus;
+-  local:
+-    *;
+ } libnuma_1.2;
+ 
+ # New interface with customizable cpuset awareness
+@@ -143,6 +137,4 @@ libnuma_1.3 {
+ libnuma_1.4 {
+   global:
+     numa_run_on_node_mask_all;
+-  local:
+-    *;
+ } libnuma_1.3;
